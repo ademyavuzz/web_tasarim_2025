@@ -1,0 +1,90 @@
+/*SELECTORS*/
+/*1. id si adi olan input seçildi */
+#adi{
+    color:chocolate
+}
+/* class ı obje_1 olan p seçildi*/
+.obje_1{
+    color:yellow;
+}
+
+/*etiket Seçiciler*/
+div{
+    background-color: blueviolet;
+}
+/*Evrensel Seçiciler*/
+*{
+    margin:0;
+    padding: 0;
+}
+
+/*Torun seçiciler*/
+ul li a{
+    color:blueviolet;
+}
+
+/*Çocuk Seçiciler*/
+/*h2'nin içindeki tüm em'leri seç*/
+h2 em{
+    color: red;
+}
+
+/*h2'nin içindeki direkt em varsa onu seçer*/
+h2>em{
+color:green;
+}
+/* h2'nin altındaki strongda direkt em seçer*/
+h2 strong>em{
+color:blue;
+}
+
+/*Bitişik Seçiciler*/
+h1+p{
+    color:coral;
+    font-size: 54px;
+}
+
+/*Özellik Seçiciler (Attributes)*/
+a{
+    color:red;
+}
+a[title]{
+    color:green
+}
+
+input[type='text']{
+    color:blueviolet;
+}
+input[type='submit']{
+    color:brown;
+}
+input[type='reset']{
+    color:chartreuse;
+}
+input[value='adi']{
+    font-size: 34px;
+}
+
+
+ul li{
+    list-style-type:none;
+    background-color: blue;
+    border: 1;
+    border-color: black;
+    margin:35px;
+    color:white;
+}
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    color:white
+}
+
+a:active{
+    color:white
+}
+
+ul{
+    display:flex;
+}
