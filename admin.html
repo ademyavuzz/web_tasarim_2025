@@ -6,6 +6,8 @@
     <title>Admin Panel</title>
     <link rel="stylesheet" href="admin_style.css" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
 </head>
 <body>
     <div class="container">
@@ -47,7 +49,77 @@
                 <li>Compose</li>
             </ul>
         </div>
-        <div class="content">Content</div>
+        <div class="content">
+            <div class="card_div">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                         <h3>150</h3>   
+                         <p>New Orders</p>
+                        </div>
+                        <div class="card-icon">
+                            <i class="fa fa-shopping-bag"></i>
+                        </div>
+                    </div>
+                    <a href="#" class="card-footer">More Info<i class="fa-regular fa-circle-right"></i></a>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                         <h3>53%</h3>   
+                         <p>Bounce Rate</p>
+                        </div>
+                        <div class="card-icon">
+                            <i class="fa-solid fa-chart-simple"></i>
+                        </div>
+                    </div>
+                    <a href="#" class="card-footer">More Info<i class="fa-regular fa-circle-right"></i></a>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                         <h3>44</h3>   
+                         <p>User Registration</p>
+                        </div>
+                        <div class="card-icon">
+                            <i class="fa-solid fa-user-plus"></i>
+                        </div>
+                    </div>
+                    <a href="#" class="card-footer">More Info<i class="fa-regular fa-circle-right"></i></a>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-text">
+                         <h3>65</h3>   
+                         <p>Unique Visitors</p>
+                        </div>
+                        <div class="card-icon">
+                            <i class="fa-solid fa-chart-pie"></i>
+                        </div>
+                    </div>
+                    <a href="#" class="card-footer">More Info<i class="fa-regular fa-circle-right"></i></a>
+                </div>
+            </div>
+            <div class="grafik_div">
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <span>Bart Chart</span>
+                        <div class="chart_prop">
+                            <i class="fa-solid fa-minus"></i>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="myChart"></canvas>
+                        <canvas id="myLineChart"></canvas>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="entire_div"></div>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
